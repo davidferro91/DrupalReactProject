@@ -1,47 +1,56 @@
 import React from 'react';
-import { Container, Row, Col } from '../Grid';
+import { Container, Col } from '../Grid';
+import Dropdown from '../Dropdown';
+import NavLink from '../NavLink';
 import './style.css';
 
 function Navbar() {
   return (
-    <Container className="navbar navbar-default container" id="navbar" role="navigation">
-      <Col size={"xs-12"} className="no-padding">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <Container>
+    <div className="navbar navbar-default" id="navbar" role="navigation">
+      <Col size={"xs-12"}>
+      <div className="no-padding">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
+          <button className="navbar-toggler border border-white p-3 btn btn-light btn-lg btn-block" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i className="fas fa-bars"></i><strong>  Navigation + Search  </strong></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="d-lg-none">
+              <form className="form-inline my-0 my-lg-0 p-2">
+                <input className="form-control" type="text" placeholder="CWRU Search" aria-label="Search" />
+                <div className="input-group-append">
+                  <span className="input-group-text py-2" id="inputGroupAppend"><i className="fas fa-search"></i></span>
+              </div>
+              </form>
+            </div>
+            <ul className="navbar-nav mr-auto">
+              <Dropdown mainLink={"/research/about"} links={[{ url: "/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "/research/about/research-news-signup", title: "Research News Signup" }]}>
+                About
+              </Dropdown>
+              <Dropdown mainLink={"/research/about"} links={[{ url: "/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "/research/about/research-news-signup", title: "Research News Signup" }]}>
+                Research with Industry
+              </Dropdown>
+              <Dropdown mainLink={"https://case.edu/research/about"} links={[{ url: "https://case.edu/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "https://case.edu/research/about/research-news-signup", title: "Research News Signup" }]}>
+                Faculty &amp; Staff
+              </Dropdown>
+              <NavLink mainLink={"https://case.edu/research/students"}>
+                Students
+              </NavLink>
+              <Dropdown mainLink={"https://case.edu/research/about"} links={[{ url: "https://case.edu/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "https://case.edu/research/about/research-news-signup", title: "Research News Signup" }]}>
+                Core Facilities
+              </Dropdown>
+              <Dropdown mainLink={"https://case.edu/research/about"} links={[{ url: "https://case.edu/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "https://case.edu/research/about/research-news-signup", title: "Research News Signup" }]}>
+                Research ShowCASE
+              </Dropdown>
+              <Dropdown mainLink={"https://case.edu/research/about"} links={[{ url: "https://case.edu/research/about/research-centers-interdisciplinary-institutes", title: "Research Centers and Interdisciplinary Institutes" }, { url: "https://case.edu/research/about/research-news-signup", title: "Research News Signup" }]}>
+                Popular Resources
+              </Dropdown>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
           </div>
         </nav>
+        </div>
       </Col>
+      </div>
     </Container>
   );
 }
