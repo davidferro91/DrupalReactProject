@@ -6,7 +6,7 @@ function Dropdown(props) {
   return (
     <li className="nav-item dropdown border border-white mx-0 pr-2">
       <Row>
-        <Col size={"sm-auto lg-10"}>
+        <Col size={"sm-auto lg-9"}>
           <a className="nav-link my-3 mr-1 p-2" href={props.mainLink} id="navbarDropdown">
             <strong className="text-wrap pr-2">{props.children}</strong>
           </a>

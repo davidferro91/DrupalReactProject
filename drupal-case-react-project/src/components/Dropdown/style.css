@@ -4,12 +4,8 @@
   color: #0a304e !important;
 }
 
-.nav-item.dropdown:hover {
-  background-color: lightgrey;
-}
-
-.nav-item:hover {
-  background-color: lightgrey;
+.nav-item.dropdown:hover, .nav-item:hover {
+  background-color: white;
 }
 
 .dropdown-content {
@@ -31,7 +27,10 @@
   display: block;
   text-align: left;
 }
-
+.dropdown-content .dropdown-item:hover {
+  background-color: whitesmoke;
+  color: cornflowerblue;  
+}
 .dropdown-content .dropdown-item {
   cursor: pointer;
 }
