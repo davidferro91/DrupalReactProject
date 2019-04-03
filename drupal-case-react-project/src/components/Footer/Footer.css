@@ -26,4 +26,16 @@
 .footer {
     background: #D3D3D3;
     height: 520px;
+    
+
 }
+
+.image {
+    width: 260px;
+    height: auto;
+}
+
+/*
+<img src ={require("drupal-case-react-project/src/components/Footer/images/cwru.png")} alt = "case"/>
+background-image: url("drupal-case-react-project/src/components/Footer/images/cwru.png");
+*/
