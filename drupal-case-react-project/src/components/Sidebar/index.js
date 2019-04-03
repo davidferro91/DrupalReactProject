@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "./Sidebar.css";
-import { Col } from '../Grid/index';
-import ListElem from '../SidebarListElem/ListElem';
+import "./style.css";
+import { Col } from '../Grid';
+import ListElem from '../SidebarListElem';
 
 class Sidebar extends Component {
 
