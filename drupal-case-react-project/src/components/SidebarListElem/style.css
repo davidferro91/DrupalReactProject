@@ -2,7 +2,7 @@ li a:hover {
     text-decoration: underline;
 }
 
-.active {
+.clicked {
     background-color: #f5f5f5;
     border-left: 2px solid #ddd;
     padding-left: 10px;
