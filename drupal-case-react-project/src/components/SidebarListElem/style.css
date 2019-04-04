@@ -1,7 +1,6 @@
 .page-sidebar-menu li a:hover {
     text-decoration: underline;
 }
-
 .page-sidebar-menu .nav-link.active {
     background-color: #f5f5f5;
     border-left: 2px solid #ddd;
