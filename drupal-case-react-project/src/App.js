@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import "./app.css";
+import Breadcrumbs from './components/Breadcrumbs';
 
 class App extends Component {
   render() {
@@ -10,6 +11,16 @@ class App extends Component {
       <div>
         <Navbar />
         <Carousel />
+        <Breadcrumbs  mainLink={"/research/about/research-centers-interdisciplinary-institutes"} mainTitle={"Research Centers and Interdisciplinary Institutes"} links={[
+          {
+            url: "/research",
+            title: "Home"
+          },
+          {
+            url: "/research/about",
+            title: "About"
+          }
+          ]}  />
         <Sidebar />
       </div>
     );
