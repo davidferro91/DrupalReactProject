@@ -24,7 +24,7 @@ class ListElem extends Component {
             <li>
                 <a
                 href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
+                className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
                 Link
@@ -34,7 +34,7 @@ class ListElem extends Component {
             <li>
                 <a
                 href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
+                className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
                 Link

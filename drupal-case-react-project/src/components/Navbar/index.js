@@ -24,7 +24,7 @@ function Navbar() {
                   </form>
                 </div>
                 <ul className="navbar-nav mr-auto">
-                  <Dropdown mainLink={"/research/about"} links={[
+                  <Dropdown mainLink={"/research/about"} mainTitle={"About"} links={[
                     {
                       url: "/research/about/research-centers-interdisciplinary-institutes",
                       title: "Research Centers and Interdisciplinary Institutes"
