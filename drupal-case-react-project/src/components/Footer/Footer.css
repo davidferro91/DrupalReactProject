@@ -35,7 +35,29 @@
     height: auto;
 }
 
-/*
-<img src ={require("drupal-case-react-project/src/components/Footer/images/cwru.png")} alt = "case"/>
-background-image: url("drupal-case-react-project/src/components/Footer/images/cwru.png");
-*/
+  table {
+    font-family: "Titillium Web";
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 200%;
+    margin-top: -70%;
+  }
+
+  td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  
+  .data {
+      font-family: "Titillium Web", sans-serif;
+      font-weight: bold;
+  }
+
+  .move {
+      margin-left: 90px;
+  }
+  
