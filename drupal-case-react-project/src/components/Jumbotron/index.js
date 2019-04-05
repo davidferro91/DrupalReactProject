@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Col, Container } from '../Grid';
+import { Container } from '../Grid';
 
 
 class Jumbotron extends Component {
