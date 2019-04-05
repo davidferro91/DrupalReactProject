@@ -7,9 +7,9 @@ import './style.css';
 function Navbar() {
   return (
     <Container>
-      <div className="navbar navbar-default" id="navbar" role="navigation">
+      <div className="navbar navbar-default p-0" id="navbar" role="navigation">
         <Col size={"xs-12"}>
-          <div className="no-padding">
+          <div className="p-0">
             <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
               <button className="navbar-toggler border border-white p-3 btn btn-light btn-lg btn-block" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i className="fas fa-bars"></i><strong>  Navigation + Search  </strong></span>

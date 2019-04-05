@@ -15,7 +15,7 @@ function Breadcrumbs(props) {
           {props.mainTitle}
         </li>
       </ol>
-      <hr className="mt-0 mb-2 mx-2"/>
+      <hr className="mt-0 mb-2"/>
     </Container>
   );
 }
