@@ -3,3 +3,8 @@
   font-size: 18px;
   color: #0a304e !important;
 }
+
+.navbar.navbar-default {
+  padding-left: -15px;
+  padding-right: -15px;
+}
