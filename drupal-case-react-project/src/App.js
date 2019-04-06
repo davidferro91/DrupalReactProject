@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 import Jumbotron from './components/Jumbotron';
 import Carousel from './components/Carousel';
 import "./app.css";
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
+        <Sidebar />
         <Wrapper>
           <Breadcrumbs mainLink={"/research/about/research-centers-interdisciplinary-institutes"} mainTitle={"Research Centers and Interdisciplinary Institutes"} links={[
             {
@@ -27,9 +29,10 @@ class App extends Component {
           <Sidebar />
           <Jumbotron />
         </Wrapper>
+      <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default App; 
