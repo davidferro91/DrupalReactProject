@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./style.css";
-import { Row, Container, Col } from '../Grid';
+import { Container, Col } from '../Grid';
 
 class Carousel extends Component {
     
