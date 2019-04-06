@@ -1,13 +1,35 @@
+.dept-container {
+    background-color: #0a304e;
+    height: 105px;
+}
 .custom-margin {
     margin-bottom: 0;
 }
 
-.search-bar {
+.dept-head {
+    color: #fff;
+    font-weight: 100;
+    font-size: 40px; 
+    font-family: "Titillium Web",sans-serif;
+    line-height: 1.1;
+}
+
+.search-div {
     position: relative;
+}
+
+.input-search {
+    border-radius: 30px;
+    color: #626262;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .magnifying-glass {
     position: absolute;
-    top: 50%;
+    left: 85%;
+    top: 20%;
     z-index: 999;
+    cursor: pointer;
 }

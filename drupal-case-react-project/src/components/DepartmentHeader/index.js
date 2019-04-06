@@ -4,20 +4,22 @@ import './style.css';
 
 function DepartmentHeader(props) {
     return (
-        <div className="jumbotron jumbotron-fluid custom-margin">
+        <div className="jumbotron jumbotron-fluid custom-margin dept-container d-flex align-items-center">
             <Container>
                 <Row>
                     <Col size={'md-9'}>
-                        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <h1 className="dept-head">Sample Department Head</h1>
                     </Col>
                     <Col size={'md-3'}>
-                        <div className="input-group mb-3 search-bar">
-                            <i class="fas fa-search magnifying-glass"></i>
+                        <div className="input-group mb-3 search-div">
                             <input type="text" 
-                            class="form-control" 
+                            className="form-control input-search" 
                             aria-label="Sizing example input" 
                             aria-describedby="inputGroup-sizing-default" 
                             placeholder="Search..." />
+                        </div>
+                        <div className="search-glass">
+                            <i class="fas fa-search magnifying-glass"></i>
                         </div>
                     </Col>
                 </Row>
