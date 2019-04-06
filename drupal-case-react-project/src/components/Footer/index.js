@@ -6,7 +6,7 @@ import s from './Footer.css';
 class Footer extends React.Component {
   render() {
     return (
-        <div class="fixed-bottom">
+        <div>
         <style type="text/css"></style>
         <div class="footer">
         

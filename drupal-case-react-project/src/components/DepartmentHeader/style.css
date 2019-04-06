@@ -1,0 +1,13 @@
+.custom-margin {
+    margin-bottom: 0;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.magnifying-glass {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+}
