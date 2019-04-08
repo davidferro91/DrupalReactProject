@@ -8,6 +8,7 @@ import Carousel from './components/Carousel';
 import Breadcrumbs from './components/Breadcrumbs';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
+import Cards from './components/Cards';
 
 import "./app.css";
 
@@ -30,6 +31,8 @@ class App extends Component {
             }
           ]} />
           <Carousel />
+          <br></br>
+          <Cards />
           <Sidebar />
           <Jumbotron />
         </Wrapper>
