@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/davidferro91/DrupalReactProject/precache-manifest.6c90827e8fff55ba4964d15bf8e7d996.js"
+  "/DrupalReactProject/precache-manifest.12ef2aec97f486b52771b2584789e48a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/davidferro91/DrupalReactProject/index.html", {
+workbox.routing.registerNavigationRoute("/DrupalReactProject/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
