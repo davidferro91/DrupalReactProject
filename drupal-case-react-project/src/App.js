@@ -6,6 +6,7 @@ import DepartmentHeader from './components/DepartmentHeader';
 import Jumbotron from './components/Jumbotron';
 import Carousel from './components/Carousel';
 import Breadcrumbs from './components/Breadcrumbs';
+import Table from './components/Table';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Carousel />
           <Sidebar />
           <Jumbotron />
+          <Table />
         </Wrapper>
       <Footer />
       </div>
