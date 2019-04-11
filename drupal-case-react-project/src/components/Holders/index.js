@@ -17,3 +17,11 @@ export function VideoHolder(props) {
     </div>
   );
 }
+
+export function TextHolder(props) {
+  return (
+    <div>
+      {props.textType === "header" ? <h2>{props.children}</h2> : <p>{props.children}</p>}
+    </div>
+  );
+}
