@@ -19,7 +19,7 @@ function DepartmentHeader(props) {
                             placeholder="Search..." />
                         </div>
                         <div className="search-glass">
-                            <i class="fas fa-search magnifying-glass"></i>
+                            <i className="fas fa-search magnifying-glass"></i>
                         </div>
                     </Col>
                 </Row>
