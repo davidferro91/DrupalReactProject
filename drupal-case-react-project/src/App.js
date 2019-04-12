@@ -9,6 +9,7 @@ import Breadcrumbs from './components/Breadcrumbs';
 import Table from './components/Table';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
+import Parallax from './components/Parallax';
 
 import "./app.css";
 
@@ -20,6 +21,7 @@ class App extends Component {
         <DepartmentHeader />
         <Navbar />
         <Wrapper>
+        <Parallax />
           <Breadcrumbs mainLink={"/research/about/research-centers-interdisciplinary-institutes"} mainTitle={"Research Centers and Interdisciplinary Institutes"} links={[
             {
               url: "/research",
