@@ -1,63 +1,18 @@
-import React, { Component } from 'react';
-import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar'
-import LogoTop from './components/LogoTop';
-import DepartmentHeader from './components/DepartmentHeader';
-import Jumbotron from './components/Jumbotron';
-import Carousel from './components/Carousel';
-import Breadcrumbs from './components/Breadcrumbs';
-import Table from './components/Table';
-import Wrapper from './components/Wrapper';
-import Footer from './components/Footer';
-import API from './utils/API';
-import axios from 'axios';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import BootCampLanding from './pages/BootCampSched';
 
-import "./app.css";
 
-class App extends Component {
-
-  seeIfImagesWorks = () => {
-    API.getContent()
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => console.log(err));
-  }
-
-  componentDidMount() {
-    axios.get('http://research.dd:8083/node/21?_format=hal_json')
-    .then((res) => {
-      console.log(res.data);
-    })
-    .catch(err => console.log(err));
-  }
-
-  render() {
+function App () {
     return (
-      <div>
-        <LogoTop />
-        <DepartmentHeader />
-        <Navbar />
-        <Wrapper>
-          <Breadcrumbs mainLink={"/research/about/research-centers-interdisciplinary-institutes"} mainTitle={"Research Centers and Interdisciplinary Institutes"} links={[
-            {
-              url: "/research",
-              title: "Home"
-            },
-            {
-              url: "/research/about",
-              title: "About"
-            }
-          ]} />
-          <Carousel />
-          <Sidebar />
-          <Jumbotron />
-          <Table />
-        </Wrapper>
-      <Footer />
-      </div>
-    );
-  }
-}
+        <Router>
+            <div>
+                <div>
+                    <Route exact path='/bootcamp' component={BootCampLanding} />
+                </div>
+            </div>
+        </Router>   
+    )
+} 
 
-export default App; 
+export default App;
