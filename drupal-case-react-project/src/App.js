@@ -10,7 +10,6 @@ import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 import API from './utils/API';
 import axios from 'axios';
-
 import "./app.css";
 
 class App extends Component {
@@ -24,9 +23,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://research.dd:8083/node/21?_format=hal_json')
-    .then((res) => {
-      console.log(res.data);
+    axios.get("http://research.dd:8083/node/21?_format=hal_json", { crossdomain: true })
+    .then(function(res) {
+      console.log(res);
     })
     .catch(err => console.log(err));
   }
