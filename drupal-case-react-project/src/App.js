@@ -9,25 +9,42 @@ import Breadcrumbs from './components/Breadcrumbs';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 import API from './utils/API';
-import axios from 'axios';
 import "./app.css";
+import axios from 'axios';
 
 class App extends Component {
 
   seeIfImagesWorks = () => {
     API.getContent()
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => console.log(err));
+      .then(result => {
+        const imgObject = {
+          images: []
+        }
+        const html = result.data.body[0].processed;
+        const element = document.createElement("div");
+        element.innerHTML = html;
+  
+        const imagesToSend = element.getElementsByTagName("img");
+        for(let i = 0; i < imagesToSend.length; i++) {
+          imagesToSend[i].src.replace()
+          imgObject.images.push(imagesToSend[i].src.replace("http://localhost:3000", "http://research.dd:8083"));
+        }
+        console.log(imgObject);
+      })
+      .catch(err => console.log(err));
   }
 
   componentDidMount() {
-    axios.get("http://research.dd:8083/node/21?_format=hal_json", { crossdomain: true })
-    .then(function(res) {
-      console.log(res);
-    })
-    .catch(err => console.log(err));
+    const config = {
+      headers: {
+        "Content-Type": "application/hal+json",
+        "Access-Control-Allow-Origin":"http://localhost:3000"
+      }
+    }
+    axios.get("http://research.dd:8083/node/21?_format=hal_json", config)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+      this.seeIfImagesWorks();
   }
 
   render() {
@@ -51,7 +68,7 @@ class App extends Component {
           <Sidebar />
           <Jumbotron />
         </Wrapper>
-      <Footer />
+        <Footer />
       </div>
     );
   }

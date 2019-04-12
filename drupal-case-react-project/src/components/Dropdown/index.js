@@ -17,7 +17,7 @@ function Dropdown(props) {
       </Row>
       <div className="dropdown-content">
         {props.links.map(link => (
-          <div>
+          <div key={link.title}>
             <div className="dropdown-divider m-0 p-0"></div>
             <a className="dropdown-item p-3" href={link.url} key={link.title}>{link.title}</a>
             <div className="dropdown-divider m-0 p-0"></div>
