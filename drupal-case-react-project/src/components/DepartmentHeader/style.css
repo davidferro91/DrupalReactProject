@@ -29,8 +29,8 @@
 
 .magnifying-glass {
     position: absolute;
-    left: 85%;
-    top: 20%;
+    left: 80%;
+    top: 10%;
     z-index: 999;
     cursor: pointer;
 }
