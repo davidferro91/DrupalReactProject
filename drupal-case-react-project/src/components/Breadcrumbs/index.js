@@ -7,8 +7,8 @@ function Breadcrumbs(props) {
     <Container>
       <ol className="breadcrumb">
         {props.links.map(link => (
-          <li>
-            <a href={link.url}>{link.title}</a>
+          <li key={link.title}>
+            <a key={link.title} href={link.url}>{link.title}</a>
           </li>
         ))}
         <li className="breadcrumb-item active">

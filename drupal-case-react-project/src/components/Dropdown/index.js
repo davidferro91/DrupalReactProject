@@ -4,7 +4,7 @@ import { Row, Col } from '../Grid';
 
 function Dropdown(props) {
   return (
-    <li className="nav-item dropdown border border-white mx-0 pr-2">
+    <li className="nav-item dropdown border border-white mx-0 pr-2" >
       <Row>
         <Col size={"sm-auto lg-9"}>
           <a className="nav-link my-3 mr-1 p-2" href={props.mainLink} id="navbarDropdown">
@@ -17,7 +17,7 @@ function Dropdown(props) {
       </Row>
       <div className="dropdown-content">
         {props.links.map(link => (
-          <div>
+          <div key={link.title}>
             <div className="dropdown-divider m-0 p-0"></div>
             <a className="dropdown-item p-3" href={link.url} key={link.title}>{link.title}</a>
             <div className="dropdown-divider m-0 p-0"></div>

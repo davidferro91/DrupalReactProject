@@ -45,7 +45,7 @@ class About extends Component {
         this.setState({ title: res.data.title[0].value });
         this.setState({ content: contentObject });
         // console.log(this.state.results);
-        // console.log(this.state.content);
+        console.log(this.state.content);
       })
       .catch(err => this.setState({ error: err }));
   }
@@ -106,7 +106,7 @@ class About extends Component {
                 {!this.state.content.content ?
                   <Loader /> :
                   this.state.content.content.map(paragraph => (
-                    <div>
+                    <div key={paragraph.textContent}>
                       <TextHolder>
                         {paragraph.innerText}
                       </TextHolder>

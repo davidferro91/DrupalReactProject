@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 export function ImageHolder(props) {
   return (
@@ -19,7 +20,7 @@ export function VideoHolder(props) {
 export function TextHolder(props) {
   return (
     <div>
-      {props.textType === "header" ? <h2>{props.children}</h2> : <div>{props.children}</div>}
+      {props.textType === "header" ? <h2>{props.children}</h2> : <div className="text-holder">{props.children}</div>}
     </div>
   );
 }
