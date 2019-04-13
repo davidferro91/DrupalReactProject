@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col } from '../Grid';
+import { Container, Col } from '../Grid'
 import Dropdown from '../Dropdown';
 import NavLink from '../NavLink';
 import './style.css';
