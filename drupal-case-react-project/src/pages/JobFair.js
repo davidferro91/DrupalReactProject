@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../components/BootCampLandingPageNav';
 import BootCampLandingPageNavbar from '../components/BootCampLandingPageNav';
 import Footer from '../components/Footer';
+import SidebarJobFair from '../components/SidebarJobFair';
 
 class BootCampSched extends Component {
 
@@ -9,6 +10,7 @@ class BootCampSched extends Component {
     return (
       <div>
         <BootCampLandingPageNavbar />
+        <SidebarJobFair />
         <Footer />
       </div>
     );
