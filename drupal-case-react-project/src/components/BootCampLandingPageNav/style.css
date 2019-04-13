@@ -2,9 +2,11 @@
     font-family: "Titillium Web", sans-serif;
     font-size: 18px;
     color: #0a304e !important;
+    display: inline-block
   }
   
   .navbar.navbar-default {
     padding-left: -15px;
     padding-right: -15px;
+    
   }
