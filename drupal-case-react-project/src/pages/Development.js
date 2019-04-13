@@ -9,10 +9,9 @@ import Breadcrumbs from './components/Breadcrumbs';
 import Table from './components/Table';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
-
 import "./app.css";
 
-class App extends Component {
+class Development extends Component {
   render() {
     return (
       <div>
@@ -51,4 +50,4 @@ class App extends Component {
   }
 }
 
-export default App; 
+export default Development; 

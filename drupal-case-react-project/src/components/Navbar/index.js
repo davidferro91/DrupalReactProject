@@ -24,161 +24,161 @@ function Navbar() {
                   </form>
                 </div>
                 <ul className="navbar-nav mr-auto">
-                  <Dropdown mainLink={"/research/about"} mainTitle={"About"} links={[
+                  <Dropdown mainLink={"/about"} mainTitle={"About"} links={[
                     {
-                      url: "/research/about/research-centers-interdisciplinary-institutes",
+                      url: "/about/research-centers-interdisciplinary-institutes",
                       title: "Research Centers and Interdisciplinary Institutes"
                     },
                     {
-                      url: "/research/about/research-news-signup",
+                      url: "/about/research-news-signup",
                       title: "Research News Signup"
                     },
                     {
-                      url: "/research/about/research-matters-archive",
+                      url: "/about/research-matters-archive",
                       title: "Research Matters Archive"
                     },
                     {
-                      url: "/research/about/faculty-research-survey",
+                      url: "/about/faculty-research-survey",
                       title: "Faculty Research Survey"
                     },
                     {
-                      url: "/research/about/vpr-catalyst-awards",
+                      url: "/about/vpr-catalyst-awards",
                       title: "VPR Catalyst Awards"
                     },
                     {
-                      url: "/research/about/contact-us",
+                      url: "/about/contact-us",
                       title: "Contact Us"
                     },
                     {
-                      url: "/research/about/feedback",
+                      url: "/about/feedback",
                       title: "Feedback"
                     },
                     {
-                      url: "/research/about/meet-our-staff",
+                      url: "/about/meet-our-staff",
                       title: "Meet Our Staff"
                     }
                   ]}>
                     About
                     <br className="d-sm-none d-md-block"></br><br className="d-sm-none d-md-block"></br>
                   </Dropdown>
-                  <Dropdown mainLink={"/research/research-with-industry"} links={[
+                  <Dropdown mainLink={"/research-with-industry"} links={[
                     {
-                      url: "/research/research-with-industry/collaborate-with-cwru",
+                      url: "/research-with-industry/collaborate-with-cwru",
                       title: "Collaborate with CWRU"
                     },
                     {
-                      url: "/research/research-with-industry/ohio-innovation-exchange",
+                      url: "/research-with-industry/ohio-innovation-exchange",
                       title: "Ohio Innovation Exchange"
                     },
                     {
-                      url: "/research/research-with-industry/ip-and-industry",
+                      url: "/research-with-industry/ip-and-industry",
                       title: "IP and Industry"
                     },
                     {
-                      url: "/research/research-with-industry/frequently-asked-questions",
+                      url: "/research-with-industry/frequently-asked-questions",
                       title: "Frequently Asked Questions"
                     }
                   ]}>
                     Research with Industry
               </Dropdown>
-                  <Dropdown mainLink={"/research/faculty-staff"} links={[
+                  <Dropdown mainLink={"/faculty-staff"} links={[
                     {
-                      url: "/research/faculty-staff/funding-opportunities",
+                      url: "/faculty-staff/funding-opportunities",
                       title: "Funding Opportunities"
                     },
                     {
-                      url: "/research/faculty-staff/proposal-development",
+                      url: "/faculty-staff/proposal-development",
                       title: "Proposal Development"
                     },
                     {
-                      url: "/research/faculty-staff/award-management",
+                      url: "/faculty-staff/award-management",
                       title: "Award Management"
                     },
                     {
-                      url: "/research/faculty-staff/compliance",
+                      url: "/faculty-staff/compliance",
                       title: "Compliance"
                     },
                     {
-                      url: "/research/faculty-staff/education-and-training",
+                      url: "/faculty-staff/education-and-training",
                       title: "Education and Training"
                     },
                     {
-                      url: "/research/faculty-staff/technology-transfer",
+                      url: "/faculty-staff/technology-transfer",
                       title: "Technology Transfer"
                     },
                     {
-                      url: "/research/faculty-staff/systems",
+                      url: "/faculty-staff/systems",
                       title: "Systems"
                     }
                   ]}>
                     Faculty &amp; Staff
               </Dropdown>
-                  <NavLink mainLink={"/research/students"}>
+                  <NavLink mainLink={"/students"}>
                     Students
               </NavLink>
-                  <Dropdown mainLink={"/research/core-facilities"} links={[
+                  <Dropdown mainLink={"/core-facilities"} links={[
                     {
                       url: "/medicine/research/som-core-facilities",
                       title: "CWRU Medicine Core Facilities"
                     },
                     {
-                      url: "/research/core-facilities/about-the-core-facilities-support-committee",
+                      url: "/core-facilities/about-the-core-facilities-support-committee",
                       title: "About the Core Facilities Support Committee"
                     }
                   ]}>
                     Core Facilities
               </Dropdown>
-                  <Dropdown mainLink={"/research/research-showcase"} links={[
+                  <Dropdown mainLink={"/research-showcase"} links={[
                     {
-                      url: "/research/research-showcase/prior-years-photos",
+                      url: "/research-showcase/prior-years-photos",
                       title: "Prior Years Photos"
                     },
                     {
-                      url: "/research/research-showcase/posters-booths-faqs",
+                      url: "/research-showcase/posters-booths-faqs",
                       title: "Posters & Booths FAQs"
                     },
                     {
-                      url: "/research/research-showcase/how-to-get-to-showcase",
+                      url: "/research-showcase/how-to-get-to-showcase",
                       title: "How To Get To ShowCASE"
                     },
                     {
-                      url: "/research/research-showcase/2019-schedule",
+                      url: "/research-showcase/2019-schedule",
                       title: "2019 Schedule"
                     },
                     {
-                      url: "/research/research-showcase/2019-keynote-speaker",
+                      url: "/research-showcase/2019-keynote-speaker",
                       title: "2019 Keynote Speaker"
                     },
                     {
-                      url: "/research/research-showcase/2019-sponsors",
+                      url: "/research-showcase/2019-sponsors",
                       title: "2019 Sponsors"
                     },
                     {
-                      url: "/research/research-showcase/2018-winners",
+                      url: "/research-showcase/2018-winners",
                       title: "2018 Winners"
                     },
                     {
-                      url: "/research/research-showcase/high-school-experience",
+                      url: "/research-showcase/high-school-experience",
                       title: "High School Experience"
                     }
                   ]}>
                     Research ShowCASE
               </Dropdown>
-                  <Dropdown mainLink={"/research/popular-resources"} links={[
+                  <Dropdown mainLink={"/popular-resources"} links={[
                     {
-                      url: "/research/popular-resources/forms-policies",
+                      url: "/popular-resources/forms-policies",
                       title: "Forms & Policies"
                     },
                     {
-                      url: "/research/popular-resources/changes-to-common-rule",
+                      url: "/popular-resources/changes-to-common-rule",
                       title: "Changes to the Common Rule"
                     },
                     {
-                      url: "/research/popular-resources/interested-in-participating-in-research",
+                      url: "/popular-resources/interested-in-participating-in-research",
                       title: "Interested in participating in research?"
                     },
                     {
-                      url: "/research/popular-resources/ksl-research-services",
+                      url: "/popular-resources/ksl-research-services",
                       title: "KSL Research Services"
                     }
                   ]}>

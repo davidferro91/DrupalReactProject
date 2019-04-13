@@ -1,18 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import BootCampLanding from './pages/BootCampSched';
+import About from './pages/About';
+import './app.css';
 
 
-function App () {
-    return (
-        <Router>
-            <div>
-                <div>
-                    <Route exact path='/bootcamp' component={BootCampLanding} />
-                </div>
-            </div>
-        </Router>   
-    )
-} 
+function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path='/bootcamp' component={BootCampLanding} />
+          <Route exact path='/about' component={About} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
 
 export default App;
