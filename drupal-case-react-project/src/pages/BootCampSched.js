@@ -4,14 +4,14 @@ import BootCampLandingPageNavbar from '../components/BootCampLandingPageNav';
 
 class BootCampSched extends Component {
 
-    render() {
-        return (
-            <div>
-                <BootCampLandingPageNavbar />
-            </div>
-        )
-    }
-   
+  render() {
+    return (
+      <div>
+        <BootCampLandingPageNavbar />
+      </div>
+    );
+  }
+
 }
 
 export default BootCampSched;

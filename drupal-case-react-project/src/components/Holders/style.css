@@ -1,0 +1,14 @@
+.text-holder {
+  font-family: "Titillium Web",sans-serif;
+  font-size: 20px;
+  line-height: 1.42857;
+}
+
+h2 {
+  color: #0a304e;
+  font-weight: 600;
+  font-family: "Titillium Web",sans-serif;
+  padding: 0 0 0.3em;
+  margin: 0;
+  line-height: 1.1;
+}

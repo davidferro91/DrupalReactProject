@@ -8,7 +8,7 @@ function DepartmentHeader(props) {
             <Container>
                 <Row>
                     <Col size={'md-9'}>
-                        <h1 className="dept-head">Sample Department Head</h1>
+                        <h1 className="dept-head">{props.children}</h1>
                     </Col>
                     <Col size={'md-3'}>
                         <div className="input-group mb-3 search-div">

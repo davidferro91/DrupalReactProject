@@ -1,6 +1,7 @@
 .dept-container {
-    background-color: #0a304e;
+    background-color: rgb(10, 48, 78);
     height: 105px;
+    margin-top:0px;
 }
 .custom-margin {
     margin-bottom: 0;
@@ -8,7 +9,7 @@
 
 .dept-head {
     color: #fff;
-    font-weight: 100;
+    font-weight: 50;
     font-size: 40px; 
     font-family: "Titillium Web",sans-serif;
     line-height: 1.1;
