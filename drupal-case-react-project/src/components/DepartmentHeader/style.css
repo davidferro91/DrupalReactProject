@@ -9,10 +9,16 @@
 
 .dept-head {
     color: #fff;
-    font-weight: 50;
-    font-size: 40px; 
-    font-family: "Titillium Web",sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0;
     line-height: 1.1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .search-div {
