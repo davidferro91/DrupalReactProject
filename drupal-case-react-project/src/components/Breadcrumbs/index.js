@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from '../Grid';
 import './style.css';
+import { Link } from "react-router-dom";
 
 function Breadcrumbs(props) {
   return (
@@ -8,7 +9,7 @@ function Breadcrumbs(props) {
       <ol className="breadcrumb">
         {props.links.map(link => (
           <li key={link.title}>
-            <a key={link.title} href={link.url}>{link.title}</a>
+            <Link key={link.title} to={link.url}>{link.title}</Link>
           </li>
         ))}
         <li className="breadcrumb-item active">

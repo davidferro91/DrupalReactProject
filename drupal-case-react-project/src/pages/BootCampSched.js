@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { Container, Col } from '../components/Grid';
 import LogoTop from '../components/LogoTop';
 import BootCampLandingPageNav from '../components/BootCampLandingPageNav';
