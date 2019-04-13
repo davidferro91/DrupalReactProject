@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Col, Row } from '../Grid';
 import './style.css';
+import { Link } from "react-router-dom";
 
 function DepartmentHeader(props) {
     return (
@@ -8,7 +9,7 @@ function DepartmentHeader(props) {
             <Container>
                 <Row>
                     <Col size={'md-9'}>
-                        <h1 className="dept-head">{props.children}</h1>
+                        <Link to="/" className="dept-head"><h1 className="dept-head">{props.children}</h1></Link>
                     </Col>
                     <Col size={'md-3'}>
                         <div className="input-group mb-3 search-div">
