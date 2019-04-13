@@ -1,0 +1,31 @@
+.main {
+    background-color: #ffffff;
+
+}
+
+.padding {
+    padding-left: 220px;
+    
+}
+
+.message {
+    font-family: "Titillium Web",sans-serif;
+    font-size: 20px;
+    line-height: 1.42857;
+    color: #333333;
+}
+
+.title {
+    color: black;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: "Titillium Web",sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: #3168a6;
+    font-weight: 600;
+    font-family: "Titillium Web",sans-serif;
+    font-size: 20px;
+}
