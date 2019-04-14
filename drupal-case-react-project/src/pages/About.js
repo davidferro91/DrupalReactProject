@@ -75,8 +75,6 @@ class About extends Component {
   }
 
   render() {
-    const title = this.state.results.title;
-    console.log(title);
     return (
       <div>
         <LogoTop />

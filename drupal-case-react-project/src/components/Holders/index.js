@@ -3,7 +3,7 @@ import './style.css';
 
 export function ImageHolder(props) {
   return (
-    <div>
+    <div className="image-holder">
       <img src={props.src} alt={props.name} className={`rounded m-4 img${props.fluid ? "-fluid" : ""}`} />
     </div>
   );

@@ -6,6 +6,7 @@ import Development from './pages/Development';
 import './app.css';
 import Notfound from './pages/NotFound';
 import Home from './pages/Home';
+import ResearchWithIndustry from './pages/ResearchWithIndustry';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/bootcamp' component={BootCampLanding} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/research-with-industry' component={ResearchWithIndustry} />
           <Route exact path='/development' component={Development} />
           <Route component={Notfound} />
         </Switch>
