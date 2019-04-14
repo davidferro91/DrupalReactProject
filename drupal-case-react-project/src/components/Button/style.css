@@ -1,0 +1,31 @@
+.button {
+  background-color: #0a304e;
+  border-color: #0a304e;
+  transition: all .3s;
+  text-align: center;
+  display: block;
+  width: 100%;
+  touch-action: manipulation;
+  cursor: pointer;
+  color: #fff !important;
+  border: 1px solid transparent;
+  border-bottom: 5px solid black;
+  text-decoration: none;
+  line-height: 1.33333;
+  font-size: 20px;
+  padding: 16px;
+  font-family: "Titillium Web",sans-serif;
+  margin: 10px 0px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #3168a6;
+  border-color: #3168a6;
+  border-bottom: 5px solid #0a304e;
+}

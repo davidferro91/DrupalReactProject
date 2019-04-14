@@ -6,6 +6,8 @@ import Development from './pages/Development';
 import './app.css';
 import JobFair from './pages/JobFair';
 import Notfound from './pages/NotFound';
+import Home from './pages/Home';
+import ResearchWithIndustry from './pages/ResearchWithIndustry';
 
 
 function App() {
@@ -13,13 +15,13 @@ function App() {
     <Router>
       <div>
         <Switch>
+          <Route exact path='/' component={Home} />
           <Route exact path='/bootcamp' component={BootCampLanding} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/research-with-industry' component={ResearchWithIndustry} />
           <Route exact path='/jobfair' component={JobFair} />
           <Route exact path='/development' component={Development} />
           <Route component={Notfound} />
-          
-
         </Switch>
       </div>
     </Router>

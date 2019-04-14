@@ -22,7 +22,7 @@
     font-family: "Titillium Web",sans-serif;
 }
 
-.link {
+.message .link {
     text-decoration: none;
     color: #3168a6;
     font-weight: 600;
