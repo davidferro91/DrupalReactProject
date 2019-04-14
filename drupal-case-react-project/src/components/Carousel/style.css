@@ -18,6 +18,13 @@
     height: 320px;
 }
 
+.carousel-caption {
+    position: relative;
+    top: 0px;
+}
+
 .carousel-caption p {
     margin-bottom: 0;
+    font-size: 20px;
+    font-family: "Titillium Web",sans-serif;
 }
