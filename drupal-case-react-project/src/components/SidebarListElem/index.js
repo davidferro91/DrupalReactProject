@@ -27,7 +27,7 @@ class ListElem extends Component {
                 className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
-                Link
+                Divisional Student Employment
                 </a>
             </li>
 
@@ -37,7 +37,7 @@ class ListElem extends Component {
                 className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
-                Link
+                Experiential Learning
                 </a>
             </li>
 
@@ -47,18 +47,7 @@ class ListElem extends Component {
                 className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
-                Link
-                </a>
-            </li>
-
-
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                Link
+                Entrepreneurship
                 </a>
             </li>
 
@@ -69,7 +58,18 @@ class ListElem extends Component {
                 className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
                 onClick={this.changeToActive}
                 >
-                Link
+                Events
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                href={this.props.href} 
+                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
+                onClick={this.changeToActive}
+                >
+                For Employers
                 </a>
             </li>
 

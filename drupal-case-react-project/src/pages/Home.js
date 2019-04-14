@@ -12,15 +12,8 @@ import '../app.css';
 import { TextHolder, ImageHolder } from '../components/Holders';
 import { Link } from 'react-router-dom';
 
-class Home extends Component {
 
-  state = {
-    results: [],
-    images: [],
-    error: "",
-    title: "",
-    content: []
-  }
+class Home extends Component {
 
   render() {
     return (
