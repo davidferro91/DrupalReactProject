@@ -14,18 +14,11 @@
     font-size: 100px;
 }
 
-.custom-size {
-    height: 320px;
-}
-
-.carousel-caption {
-    position: relative;
-    top: 0px;
+.car-image {
+    height: 450px;
 }
 
 .carousel-caption p {
     margin-bottom: 0;
-    font-size: 20px;
-    font-family: "Titillium Web",sans-serif;
-
+    font-size: 36px;
 }

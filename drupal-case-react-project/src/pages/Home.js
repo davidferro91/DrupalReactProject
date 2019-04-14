@@ -14,14 +14,6 @@ import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
-  state = {
-    results: [],
-    images: [],
-    error: "",
-    title: "",
-    content: []
-  }
-
   render() {
     return (
       <div>
