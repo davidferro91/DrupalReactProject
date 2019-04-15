@@ -19,7 +19,9 @@ class About extends Component {
     images: [],
     error: "",
     title: "",
-    content: []
+    content: [],
+    sidebarTitle: "",
+    listItemContent: []
   }
 
   componentDidMount() {
@@ -90,7 +92,7 @@ class About extends Component {
           <Container>
             <Row>
               <Col size={"md-3"}>
-                <Sidebar></Sidebar>
+                <Sidebar title={this.state.sidebarTitle} content={this.state.listItemContent}></Sidebar>
               </Col>
               <Col size={"md-9"}>
                 <div className="float-right">

@@ -11,6 +11,7 @@
 
 .sidebar-header:hover {
     color: #0a304e; 
+    text-decoration: underline;
 }
 
 .page-sidebar-menu {
@@ -19,19 +20,3 @@
     padding: 0;
 }
 
-.nav-link {
-    text-shadow: none;
-    text-decoration: none;
-    margin-left: 10px;
-    color: #626262;
-    font-size: 18px;
-    font-weight: 400;
-    position: relative;
-    border: 0;
-    padding: 5px 0
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    color: #626262;
-}

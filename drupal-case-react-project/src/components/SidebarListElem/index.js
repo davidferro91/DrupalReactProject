@@ -17,63 +17,16 @@ class ListElem extends Component {
 
     render() {
         return (
-
-            <div>
-
-            {/* we should use an array loop here, but for now I will just hard code the list elements */}
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                Divisional Student Employment
-                </a>
-            </li>
-
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link clicked' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                Experiential Learning
-                </a>
-            </li>
-
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                Entrepreneurship
-                </a>
-            </li>
-
-
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                Events
-                </a>
-            </li>
-
-
-            <li>
-                <a
-                href={this.props.href} 
-                className={this.state.isClicked ? 'nav-link active' : 'nav-link'}
-                onClick={this.changeToActive}
-                >
-                For Employers
-                </a>
-            </li>
-
-           
+            <div className={this.state.isClicked ? 'div-elem-active' : 'div-elem-nonactive'}>
+                <li>
+                    <a
+                    href={this.props.href} 
+                    onClick={this.changeToActive}
+                    className={this.state.isClicked ? 'sidebar-elem-active' : 'sidebar-elem-nonactive'}
+                    >
+                    {this.props.content}
+                    </a>
+                </li>
             </div>
 
         )
