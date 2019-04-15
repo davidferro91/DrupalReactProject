@@ -5,7 +5,7 @@ import About from './pages/About';
 import Development from './pages/Development';
 import './app.css';
 import JobFair from './pages/JobFair';
-
+import Notfound from './components/PageNotFound';
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
           <Route exact path='/about' component={About} />
           <Route exact path='/jobfair' component={JobFair} />
           <Route exact path='/development' component={Development} />
+          <Route exact path='/404' component={Notfound} />
+          
+
         </Switch>
       </div>
     </Router>
