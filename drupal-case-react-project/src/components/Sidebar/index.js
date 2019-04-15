@@ -19,7 +19,7 @@ class Sidebar extends Component {
               we can now loop through the array, create a list element for each element in the array 
               and then populate the listitems content prop with the content from the corresponding element 
               in the array*/}
-              <ListElem content={from array stuff above} href='index.html'/>
+              <ListElem href='index.html'/>
             </ul>
           </div>
         </nav>
