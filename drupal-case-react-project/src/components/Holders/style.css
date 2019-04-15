@@ -14,8 +14,34 @@ h2 {
 }
 
 .image-holder {
+  position: relative;
+  left: -20px;
   width: 80%;
   padding: 0;
   align-self: center;
   margin: auto;
+}
+
+.caption-image-holder {
+  position: relative;
+  left: -24px;
+  width: 100%;
+  padding: 0;
+  align-self: center;
+  margin: auto;
+}
+
+.image-caption {
+  background-color: #0A304E;
+  width: 100%;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px 20px 15px;
+  position: relative;
+  color: #fff;
+  height: 75px;
+  position: relative;
+  top: -24px;
+  left: 24px;
+  font-size: 20px;
 }

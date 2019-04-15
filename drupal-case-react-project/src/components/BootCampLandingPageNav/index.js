@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from '../Grid';
 import NavLink from '../NavLink';
 
 import './style.css';

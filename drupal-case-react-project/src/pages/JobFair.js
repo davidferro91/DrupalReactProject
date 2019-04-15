@@ -3,7 +3,7 @@ import '../components/BootCampLandingPageNav';
 import BootCampLandingPageNavbar from '../components/BootCampLandingPageNav';
 import Footer from '../components/Footer';
 import SidebarJobFair from '../components/SidebarJobFair';
-import {TextHolder, ImageHolder} from '../components/Holders';
+import { TextHolder } from '../components/Holders';
 
 class JobFair extends Component {
 
