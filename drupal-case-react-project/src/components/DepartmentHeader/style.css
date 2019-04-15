@@ -36,7 +36,7 @@ a:hover {
 .magnifying-glass {
     position: absolute;
     left: 80%;
-    top: 10%;
+    top: 16%;
     z-index: 999;
     cursor: pointer;
 }

@@ -14,7 +14,7 @@ function Dropdown(props) {
           </Link>
         </Col>
         <Col size={"xs-1"}>
-          <i className="fas fa-angle-down py-4 mr-1 pr-1"></i>
+          <i className="fas fa-angle-down py-4 mr-1 px-1"></i>
         </Col>
       </Row>
       <div className="dropdown-content">

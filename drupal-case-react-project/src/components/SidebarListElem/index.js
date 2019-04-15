@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 class ListElem extends Component {
@@ -19,13 +20,13 @@ class ListElem extends Component {
         return (
             <div className={this.state.isClicked ? 'div-elem-active' : 'div-elem-nonactive'}>
                 <li>
-                    <a
-                    href={this.props.href} 
+                    <Link
+                    to={this.props.link} 
                     onClick={this.changeToActive}
                     className={this.state.isClicked ? 'sidebar-elem-active' : 'sidebar-elem-nonactive'}
                     >
-                    {this.props.content}
-                    </a>
+                    {this.props.name}
+                    </Link>
                 </li>
             </div>
 
