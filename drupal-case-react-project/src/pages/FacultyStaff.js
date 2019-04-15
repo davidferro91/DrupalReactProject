@@ -64,7 +64,26 @@ class FacultyStaff extends Component {
           <Container>
             <Row>
               <Col size={"md-3"}>
-                <Sidebar></Sidebar>
+              <Sidebar title={"Faculty & Staff"} titleLink="/faculty-staff" content={
+                  [
+                    {
+                      link: "/faculty-staff/funding-opportunities",
+                      name: "Funding Opportunities"
+                    },
+                    {
+                      link: "/faculty-staff/proposal-development",
+                      name: "Proposal Development"
+                    },
+                    {
+                      link: "/faculty-staff/award-management",
+                      name: "Award Management"
+                    },
+                    {
+                      link: "/faculty-staff/compliance",
+                      name: "Compliance"
+                    }
+                  ]
+                }></Sidebar>
               </Col>
               <Col size={"md-9"}>
                 <TextHolder textType={"header"}>{this.state.title}</TextHolder>

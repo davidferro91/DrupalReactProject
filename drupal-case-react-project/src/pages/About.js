@@ -19,9 +19,7 @@ class About extends Component {
     images: [],
     error: "",
     title: "",
-    content: [],
-    sidebarTitle: "",
-    listItemContent: []
+    content: []
   }
 
   componentDidMount() {
@@ -92,7 +90,26 @@ class About extends Component {
           <Container>
             <Row>
               <Col size={"md-3"}>
-                <Sidebar title={this.state.sidebarTitle} content={this.state.listItemContent}></Sidebar>
+                <Sidebar title={"About"} titleLink="/about" content={
+                  [
+                    {
+                      link: "/about/research-centers-interdisciplinary-institutes",
+                      name: `Research Centers`
+                    },
+                    {
+                      link: "/about/research-news-signup",
+                      name: "Research News Signup"
+                    },
+                    {
+                      link: "/about/research-matters-archive",
+                      name: "Research Matters Archive"
+                    },
+                    {
+                      link: "/about/faculty-research-survey",
+                      name: "Faculty Research Survey"
+                    }
+                  ]
+                }></Sidebar>
               </Col>
               <Col size={"md-9"}>
                 <div className="float-right">
@@ -119,7 +136,7 @@ class About extends Component {
           </Container>
         </Wrapper>
         <Footer />
-      </div>
+      </div >
     );
   }
 }

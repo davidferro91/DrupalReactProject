@@ -1,10 +1,13 @@
 .sidebar-elem-nonactive {
     color: #626262;
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px 0;
     font-weight: 400;
     margin: 0 0 0 10px;
     cursor: pointer;
+    width:150%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .sidebar-elem-nonactive:hover {
@@ -16,10 +19,12 @@
     color: #3168a6;
     font-weight: 700px;
     padding: 15px;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
     background: lightgrey;
     border-left: 2px solid grey;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .div-elem-active {
