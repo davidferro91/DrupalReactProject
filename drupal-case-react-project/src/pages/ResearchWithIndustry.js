@@ -74,7 +74,22 @@ class ResearchWithIndustry extends Component {
           <Container>
             <Row>
               <Col size={"md-3"}>
-                <Sidebar></Sidebar>
+              <Sidebar title={"Research with Industry"} titleLink="/research-with-industry" content={
+                  [
+                    {
+                      link: "/research-with-industry/collaborate-with-cwru",
+                      name: "Collaborate with CWRU"
+                    },
+                    {
+                      link: "/research-with-industry/ohio-innovation-exchange",
+                      name: "Ohio Innovation Exchange"
+                    },
+                    {
+                      link: "/research-with-industry/ip-and-industry",
+                      name: "IP and Industry"
+                    }
+                  ]
+                }></Sidebar>
               </Col>
               <Col size={"md-9"}>
                 <TextHolder textType={"header"}>{this.state.title}
