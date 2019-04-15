@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import { Container, Col } from '../Grid';
+import { Col } from '../Grid';
 
 function BootCampCarousel(props) {
 

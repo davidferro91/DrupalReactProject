@@ -9,6 +9,17 @@ export function ImageHolder(props) {
   );
 }
 
+export function CaptionImageHolder(props) {
+  return (
+    <div className="caption-image-holder">
+      <img src={props.src} alt={props.name} className={`m-4 img${props.fluid ? "-fluid" : ""}`} />
+      <div className="image-caption d-none d-md-block">
+        <p>{props.caption}</p>
+      </div>
+    </div>
+  );
+}
+
 export function VideoHolder(props) {
   return (
     <div className={props.aspectRatio ? "embed-responsive embed-responsive-" + props.aspectRatio : "embed-responsive"}>

@@ -8,6 +8,7 @@ import JobFair from './pages/JobFair';
 import Notfound from './pages/NotFound';
 import Home from './pages/Home';
 import ResearchWithIndustry from './pages/ResearchWithIndustry';
+import FacultyStaff from './pages/FacultyStaff';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/research-with-industry' component={ResearchWithIndustry} />
           <Route exact path='/jobfair' component={JobFair} />
           <Route exact path='/development' component={Development} />
+          <Route exact path='/faculty-staff' component={FacultyStaff} />
           <Route component={Notfound} />
         </Switch>
       </div>
