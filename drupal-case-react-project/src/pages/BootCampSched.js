@@ -16,7 +16,7 @@ class BootCampSched extends Component {
       <div>
         <LogoTop />
         <BootCampLandingPageNav />
-        <div classNameName='mt-3'> 
+        <div className='mt-3'> 
           <BootCampCarousel
             header1="Web Development" 
             header2="Data Bootcamp" 
