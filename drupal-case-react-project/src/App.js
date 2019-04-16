@@ -9,7 +9,6 @@ import Notfound from './pages/NotFound';
 import Home from './pages/Home';
 import ResearchWithIndustry from './pages/ResearchWithIndustry';
 import FacultyStaff from './pages/FacultyStaff';
-import SideBarTesting from './pages/SideBarTesting';
 import TestLandingPage from './pages/TestLanding';
 
 
@@ -26,7 +25,6 @@ function App() {
           <Route exact path='/jobfair' component={JobFair} />
           <Route exact path='/development' component={Development} />
           <Route exact path='/faculty-staff' component={FacultyStaff} />
-          <Route exact path='/sidebar' component={SideBarTesting} />
           <Route exact path='/testingpage' component={TestLandingPage} />
           <Route component={Notfound} />
         </Switch>
