@@ -11,7 +11,11 @@ class SidebarJobFair extends Component {
         <nav className="" aria-label="Sidebar Menu">
           <div className="page-sidebar">
             <a href="demo_sidebar1.html">
-              <h2 className="sidebar-header">Career Development</h2>
+              <h1 className="sidebar-header">Career Development</h1>
+              
+              
+            
+              
             </a>
             <ul className="page-sidebar-menu" >
               <ListElem href='index.html' parentClass='nav-item' childClass='nav-link' />
