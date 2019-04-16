@@ -9,7 +9,7 @@ import { Container, Row, Col } from '../components/Grid';
 import { ImageCard } from '../components/Cards';
 import { TextHolder } from '../components/Holders';
 
-class TestLanding extends Component {
+class TestLanding2 extends Component {
   render() {
     return (
       <div>
@@ -58,4 +58,4 @@ class TestLanding extends Component {
   }
 }
 
-export default TestLanding;
+export default TestLanding2;
