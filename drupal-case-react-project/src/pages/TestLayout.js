@@ -6,11 +6,13 @@ import React, { Component } from 'react';
 // import Layout5 from '../layouts/Layout5';
 // import Layout6 from '../layouts/Layout6';
 // import Layout7 from '../layouts/Layout7';
-import Layout8 from '../layouts/Layout8';
+// import Layout8 from '../layouts/Layout8';
+// import Layout9 from '../layouts/Layout9';
+import Layout10 from '../layouts/Layout10';
 
 class TestLayout extends Component {
 
-  images=[
+  images = [
     "https://case.edu/rnc/img/cleveland-bg.jpg",
     "https://www.bestcounselingdegrees.net/wp-content/uploads/2017/08/case-western-reserve-university-ph-d-in-clinical-psychology.jpg",
     "https://dailymedia.case.edu/wp-content/uploads/2016/08/18153849/cwru-sign.jpg",
@@ -25,16 +27,22 @@ class TestLayout extends Component {
 
 
   render() {
-    return(
+    return (
       <div>
-        <Layout8
-          pageTitle="React Drupal Landing Page" 
-          parallaxImage={this.images[1]}
-          parallaxCaption="Here's an example of what React can do with Drupal"
-          cardImageName="Come See Our Results"
-          cardText="This is a demonstration of what you can do with very few lines of code."
-          cardImageSrc={this.images[9]}
-          node="461"
+        <Layout10
+          pageTitle="React Drupal Landing Page"
+          parallaxImage1={this.images[1]}
+          parallaxCaption1="Here's an example of what React can do with Drupal"
+          carouselMainImage={{ src: this.images[9], name: "Here is an image" }}
+          carouselImageItems={[
+            { src: this.images[6], name: "This is a demonstration of what you can do with very few lines of code." },
+            { src: this.images[7], name: "This is another demonstration of what you can do with very few lines of code." },
+          ]}
+          calendarEvents={[
+            { month: "May", day: "09", description: "Here is an event" },
+            { month: "May", day: "14", description: "Here is another event" },
+          ]}
+          node="1401"
         />
       </div>
     );
