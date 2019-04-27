@@ -11,6 +11,7 @@ import ResearchWithIndustry from './pages/ResearchWithIndustry';
 import FacultyStaff from './pages/FacultyStaff';
 import TestLanding2 from './pages/TestLanding2';
 import TestLandingPage from './pages/TestLanding';
+import TestLayout from './pages/TestLayout';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/faculty-staff' component={FacultyStaff} />
           <Route exact path='/testlanding2' component={TestLanding2} />
           <Route exact path='/testlanding' component={TestLandingPage} />
+          <Route exact path='/testlayout' component={TestLayout} />
           <Route component={Notfound} />
         </Switch>
       </div>

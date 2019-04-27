@@ -1,6 +1,38 @@
-.navbar-toggler {
+.nav-link {
     font-family: "Titillium Web", sans-serif;
     font-size: 18px;
     color: #0a304e !important;
 }
- 
+  
+.nav-item.dropdown:hover, .nav-item:hover {
+    background-color: white;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 500;
+}
+  
+.nav-item.dropdown:hover .dropdown-content {
+    display: block !important; 
+}
+  
+.dropdown-content .dropdown-item, .dropdown-content .dropdown-divider {
+    float: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: whitesmoke;
+    color: cornflowerblue;  
+}
+
+.dropdown-content .dropdown-item {
+    cursor: pointer;
+}
