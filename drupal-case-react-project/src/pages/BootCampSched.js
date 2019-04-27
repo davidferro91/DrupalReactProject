@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { TextHolder }from '../components/Holders';
 import { TextCard } from '../components/Cards';
 import Button from '../components/Button';
+import Wrapper from '../components/Wrapper';
 
 class BootCampSched extends Component {
 
@@ -16,6 +17,7 @@ class BootCampSched extends Component {
       <div>
         <LogoTop />
         <BootCampLandingPageNav />
+        <Wrapper>
         <div className='mt-3'> 
           <BootCampCarousel
             header1="Web Development" 
@@ -126,6 +128,7 @@ class BootCampSched extends Component {
           </Col>
         </Row>
       </div>
+      </Wrapper>
     <Footer/>
   </div>
   );
