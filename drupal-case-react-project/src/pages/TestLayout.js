@@ -28,11 +28,11 @@ class TestLayout extends Component {
     return(
       <div>
         <Layout8
-          pageTitle="This is a Test" 
+          pageTitle="React Drupal Landing Page" 
           parallaxImage={this.images[1]}
-          parallaxCaption="This is my caption, and it is a very nice caption indeed!"
-          cardImageName="Cool Image"
-          cardText="Here is a set of text that we can use for the card"
+          parallaxCaption="Here's an example of what React can do with Drupal"
+          cardImageName="Come See Our Results"
+          cardText="This is a demonstration of what you can do with very few lines of code."
           cardImageSrc={this.images[9]}
           node="461"
         />
