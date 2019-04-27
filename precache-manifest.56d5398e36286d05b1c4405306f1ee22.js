@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/DrupalReactProject/static/js/runtime~main.7e6388d1.js"
   },
   {
-    "revision": "19fcaba590ebe09595b9",
-    "url": "/DrupalReactProject/static/js/main.c02cdf83.chunk.js"
+    "revision": "8f440e5b1acd765e31f6",
+    "url": "/DrupalReactProject/static/js/main.c7a36e62.chunk.js"
   },
   {
     "revision": "07ce7e23a4574cfd025a",
     "url": "/DrupalReactProject/static/js/2.83421d41.chunk.js"
   },
   {
-    "revision": "19fcaba590ebe09595b9",
+    "revision": "8f440e5b1acd765e31f6",
     "url": "/DrupalReactProject/static/css/main.e9927f81.chunk.css"
   },
   {
-    "revision": "1c943bd10043c2cacf0f42e35e10dc4e",
+    "revision": "ae57bbb3ae475edfaf655635d26997e0",
     "url": "/DrupalReactProject/index.html"
   }
 ];
