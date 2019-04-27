@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 // import Layout2 from '../layouts/Layout2';
 // import Layout3 from '../layouts/Layout3';
 // import Layout4 from '../layouts/Layout4';
-import Layout5 from '../layouts/Layout5';
+// import Layout5 from '../layouts/Layout5';
+import Layout6 from '../layouts/Layout6';
 
 class TestLayout extends Component {
 
@@ -20,16 +21,11 @@ class TestLayout extends Component {
   render() {
     return(
       <div>
-        <Layout5
+        <Layout6
           pageTitle="This is a Test" 
-          image1Src={this.images[4]}
-          image1Name="Image 1"
-          image1Caption="This is a pretty image"
-          image2Src={this.images[0]}
-          image2Name="Image 2"
-          image2Caption="This is a second pretty image"
-          node1="281"
-          node2="21"
+          parallaxImage={this.images[0]}
+          parallaxCaption="This is my caption, and it is a very nice caption indeed!"
+          node="21"
         />
       </div>
     );
