@@ -23,7 +23,7 @@ class TestLayout extends Component {
       <div>
         <Layout6
           pageTitle="This is a Test" 
-          parallaxImage={this.images[0]}
+          parallaxImage={this.images[5]}
           parallaxCaption="This is my caption, and it is a very nice caption indeed!"
           node="21"
         />

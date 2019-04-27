@@ -26,8 +26,9 @@ class ParallaxBackgroundImage extends Component {
       <div className="parallax-background" style={{
         backgroundPositionY: this.state.offset/1.5,
         backgroundImage: "url(" + this.props.backgroundImageSrc + ")",
-        height: "45vh",
-        backgroundSize: "100%"
+        minHeight: "45vh",
+        backgroundSize: "100% 200%",
+        backgroundRepeat: "no-repeat"
       }}>
         <div className="info-container" style={{
           bottom: this.state.offset/2,
