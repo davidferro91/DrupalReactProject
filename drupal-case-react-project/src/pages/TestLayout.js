@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import Layout1 from '../layouts/Layout1';
-import Layout2 from '../layouts/Layout2';
+// import Layout2 from '../layouts/Layout2';
+// import Layout3 from '../layouts/Layout3';
+import Layout4 from '../layouts/Layout4';
 
 class TestLayout extends Component {
 
@@ -17,18 +19,17 @@ class TestLayout extends Component {
   render() {
     return(
       <div>
-        <Layout2
+        <Layout4
           pageTitle="This is a Test" 
-          carouselMainImage={{ name: "Image Name", src: this.images[0] }}
-          carouselImageItems={[
-            { name: "Image Name 2", src: this.images[1] },
-            { name: "Image Name 3", src: this.images[3] }
-          ]}
+          splitImage1={this.images[3]}
+          splitImageName1="Image 1"
+          splitImage2={this.images[2]}
+          splitImageName2="Image 2"
           calendarEvents={[
             { month: "Apr", day: "30", description: "This is a description" },
             { month: "May", day: "02", description: "Here is another description" }
           ]}
-          node="281"
+          node="1401"
         />
       </div>
     );

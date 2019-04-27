@@ -9,6 +9,16 @@ export function ImageHolder(props) {
   );
 }
 
+export function SplitImageHolder(props) {
+  return (
+      <div className="split-image-holder">
+        <img src={props.src1} alt={props.name1} className="img-fluid float-left" style={{ width: "50%",
+      height:"50vh" }} />
+        <img src={props.src2} alt={props.name2} className="img-fluid float-right" style={{ width: "50%", height:"50vh" }} />
+      </div>
+  );
+}
+
 export function CaptionImageHolder(props) {
   return (
     <div className="caption-image-holder">
