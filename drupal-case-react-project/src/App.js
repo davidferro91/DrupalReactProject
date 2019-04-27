@@ -16,7 +16,7 @@ import TestLayout from './pages/TestLayout';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Switch>
           <Route exact path='/' component={Home} />
