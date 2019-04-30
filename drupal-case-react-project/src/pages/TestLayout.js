@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-// import Layout1 from '../layouts/Layout1';
-// import Layout2 from '../layouts/Layout2';
-// import Layout3 from '../layouts/Layout3';
-// import Layout4 from '../layouts/Layout4';
-// import Layout5 from '../layouts/Layout5';
-// import Layout6 from '../layouts/Layout6';
-// import Layout7 from '../layouts/Layout7';
-// import Layout8 from '../layouts/Layout8';
-// import Layout9 from '../layouts/Layout9';
+import Layout1 from '../layouts/Layout1';
+import Layout2 from '../layouts/Layout2';
+import Layout3 from '../layouts/Layout3';
+import Layout4 from '../layouts/Layout4';
+import Layout5 from '../layouts/Layout5';
+import Layout6 from '../layouts/Layout6';
+import Layout7 from '../layouts/Layout7';
+import Layout8 from '../layouts/Layout8';
+import Layout9 from '../layouts/Layout9';
 import Layout10 from '../layouts/Layout10';
 
 class TestLayout extends Component {
@@ -29,10 +29,16 @@ class TestLayout extends Component {
   render() {
     return (
       <div>
-        <Layout10
+        <Layout8
           pageTitle="React Drupal Landing Page"
-          parallaxImage1={this.images[1]}
-          parallaxCaption1="Here's an example of what React can do with Drupal"
+          parallaxImage={this.images[0]}
+          parallaxCaption="Here's an example of what React can do with Drupal"
+          cardImageSrc={this.images[5]}
+          cardImageName="Image Name"
+          cardText="Here is a caption for the image."
+          image2Src={this.images[4]}
+          image2Name="Image 2"
+          image2Caption="Caption 2"
           carouselMainImage={{ src: this.images[9], name: "Here is an image" }}
           carouselImageItems={[
             { src: this.images[6], name: "This is a demonstration of what you can do with very few lines of code." },

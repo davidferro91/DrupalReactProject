@@ -58,8 +58,8 @@ class Layout9 extends Component {
       <div>
         <LogoTop></LogoTop>
         <DepartmentHeader>{this.props.pageTitle}</DepartmentHeader>
-        <ParallaxBackgroundImage backgroundImageSrc={this.props.parallaxImage1}>
-          <Button link="#" name={this.props.parallaxCaption1}></Button>
+        <ParallaxBackgroundImage backgroundImageSrc={this.props.parallaxImage}>
+          <Button link="#" name={this.props.parallaxCaption}></Button>
         </ParallaxBackgroundImage>
         <Wrapper>
           <br></br>
